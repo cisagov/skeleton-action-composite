@@ -1,0 +1,15 @@
+---
+author: Cybersecurity and Infrastructure Security Agency
+branding:
+  color: blue
+  icon: help-circle
+description: Skeleton GitHub composite action.
+name: Skeleton
+
+runs:
+  using: composite
+  steps:
+    - id: my-id
+      name: Say hello
+      run: "echo ::notice:: Hello, world!"
+      shell: bash
