@@ -23,7 +23,7 @@ updates:
     #   - dependency-name: mxschmitt/action-tmate
     #   - dependency-name: step-security/harden-runner
     #   # Managed by cisagov/skeleton-action-composite
-    #   - zyactions/semver
+    #   - dependency-name: zyactions/semver
     package-ecosystem: github-actions
     schedule:
       interval: weekly
