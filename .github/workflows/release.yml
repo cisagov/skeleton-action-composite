@@ -45,7 +45,7 @@ jobs:
     needs:
       - diagnostics
     permissions:
-      # We need write permission to move tags.
+      # We need write permission to move tags
       contents: write
     runs-on: ubuntu-latest
     steps:
