@@ -67,8 +67,8 @@ jobs:
           # ahead and use the YAML multiline literal style indicator.
           prefixes: |
             v
-      - id: checkout-code
-        name: Checkout the code
+      - id: checkout-repo
+        name: Checkout the repository
         uses: actions/checkout@v4
       - id: move-tags
         # Just in case...
