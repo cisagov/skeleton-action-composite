@@ -2,15 +2,57 @@
 
 [![GitHub Build Status](https://github.com/cisagov/skeleton-action-composite/workflows/build/badge.svg)](https://github.com/cisagov/skeleton-action-composite/actions)
 
-This is a generic skeleton project that can be used to quickly get a
-new [cisagov](https://github.com/cisagov) GitHub project started.
-This skeleton project contains [licensing information](LICENSE), as
-well as [pre-commit hooks](https://pre-commit.com) and
-[GitHub Actions](https://github.com/features/actions) configurations
+This is a skeleton project that can be used to quickly get a new
+[cisagov](https://github.com/cisagov) [GitHub composite
+action](https://docs.github.com/en/actions/sharing-automations/creating-actions/about-custom-actions#composite-actions)
+project started.  This skeleton project contains [licensing
+information](LICENSE), as well as [pre-commit
+hooks](https://pre-commit.com) and [GitHub
+Actions](https://github.com/features/actions) configurations
 appropriate for the major languages that we use.
 
-In many cases you will instead want to use one of the more specific
-skeleton projects derived from this one.
+## Usage ##
+
+### Inputs ###
+
+None.
+<!--
+| Name | Description | Interpreted Type | Default | Required |
+|------|-------------|------------------|---------|:--------:|
+| input_name | The input's description. | `string` | n/a | yes |
+-->
+
+### Outputs ###
+
+None.
+<!--
+| Name | Description | Output Type |
+|------|-------------|-------------|
+| output_name | The output's description. | `output_type` |
+-->
+
+### Sample GitHub Actions workflow ###
+
+This GitHub Action only prints a notify annotation on the runner and
+therefore requires no permissions.
+
+```yml
+---
+name: The workflow
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  my_job:
+    # This job does not need any permissions
+    permissions: {}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        uses: cisagov/skeleton-action-composite@v1
+```
 
 ## New Repositories from a Skeleton ##
 

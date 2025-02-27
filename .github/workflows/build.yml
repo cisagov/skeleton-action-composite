@@ -140,7 +140,7 @@ jobs:
           PACKAGE_URL: honnef.co/go/tools/cmd/staticcheck
           PACKAGE_VERSION: ${{ steps.setup-env.outputs.staticcheck-version }}
         run: go install ${PACKAGE_URL}@${PACKAGE_VERSION}
-      # TODO: https://github.com/cisagov/skeleton-action-composite/issues/165
+      # TODO: https://github.com/cisagov/skeleton-generic/issues/165
       # We are temporarily using @mcdonnnj's forked branch of terraform-docs
       # until his PR: https://github.com/terraform-docs/terraform-docs/pull/745
       # is approved. This temporary fix will allow for ATX header support when
