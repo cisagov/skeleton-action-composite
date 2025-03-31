@@ -51,7 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Say hello
-        uses: cisagov/skeleton-action-composite@v1
+        uses: cisagov/skeleton-action-composite@3941c019a43e9726231b19390126b37ffda86f58 # v1.0.1
 ```
 
 ## New Repositories from a Skeleton ##
