@@ -20,7 +20,7 @@ appropriate for the major languages that we use.
 None.
 <!--
 | Name | Description | Interpreted Type | Default | Required |
-|------|-------------|------------------|---------|:--------:|
+| ---- | ----------- | ---------------- | ------- | :------: |
 | input_name | The input's description. | `string` | n/a | yes |
 -->
 
@@ -29,7 +29,7 @@ None.
 None.
 <!--
 | Name | Description | Output Type |
-|------|-------------|-------------|
+| ---- | ----------- | ----------- |
 | output_name | The output's description. | `output_type` |
 -->
 
